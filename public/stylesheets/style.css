@@ -1,0 +1,422 @@
+/******************************************
+   GLOBAL INITIAL STYLE SETTING
+*******************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Clear a link style */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* For all aside partial */
+div.hidden {
+  display: none;
+}
+/******************************************
+    MEDIA QUERY FOR 0px to 695px
+*******************************************/
+
+@media screen and (min-width: 0px) {
+     /******************************************
+        INDEX TEMPLATE
+    *******************************************/
+
+    section.background {
+        width: 100%;
+        height: 100%;
+        background: url('/images/EricChenPortrait3.jpg') no-repeat;
+        background-size: 100%;
+    }
+
+        header.header-bar {
+            width: 99%;
+            height: 56px;
+            padding-left: 1%;
+            background-color: rgba(255, 250, 250, 0.8);
+        }
+        
+        header.header-bar h1 {
+            display: inline-block;
+            font-size: 1.5em;
+            color: #005A5A;
+        }
+
+        header.header-bar h1 a {
+            font-family: 'Rock Salt', cursive, sans-serif;
+            font-style: italic;
+        }
+
+        header.header-bar div.links {
+            width: 150px;
+            margin: 5px 0 0 5%;
+            display: inline-block;
+        }
+
+        header.header-bar div.links a {
+            display: inline-block;
+            margin: 0 3%;
+        }
+        
+        header.header-bar img.icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 1%;
+        }
+
+        footer.footer-bar {
+            width: 100%;
+            height: 10%;
+            padding: 1% 0%;
+            position: relative;
+            top: 2%;
+            text-align: center;
+            background-color: rgba(255, 250, 250, 0.8);
+        }
+
+        footer.footer-bar button {
+            width: 20%;
+            margin: 0 2%;
+            border-style: none;
+            border-bottom: 8px solid goldenrod;
+            border-radius: 5px;
+            background: none;
+            outline: none;
+            font-size: 0.9em;
+            font-family: 'Rock Salt', cursive, sans-serif;
+            font-style: italic;
+            color: #005A5A;
+        }
+
+        footer.footer-bar button:hover {
+            background-color: rgba(218, 165, 32, 0.5);
+            border-bottom: 8px solid rgba(218, 165, 32, 0.5);
+        }
+
+        /* ng-class on the button */
+        footer.footer-bar button.active {
+            background-color: rgba(218, 165, 32, 0.5);
+        }
+
+        footer.footer-bar p{
+            margin-top: 0.5%;
+            margin-right: 1%;
+            float: right;
+        }
+
+    /******************************************
+        MAIN PARTIAL from each Template
+    *******************************************/
+
+    div.main-aside {
+        width: 60%;
+        position: relative;
+        left: 40%;
+    }
+
+        div.main-aside nav {
+            width: 100%;
+            margin: 3% 0 1%;
+        }
+
+        div.main-aside button {
+            width: 28%;
+            margin: 0 2%;
+            padding: 0.3% 0;
+            border-style: none;
+            border-radius: 5px;
+            background-color: rgba(255, 215, 0, 0.6);
+            outline: none;
+            font-size: 0.5em;
+            font-family: 'Oswald', sans-serif;
+            color: white;
+        }
+
+        div.main-aside button:hover {
+             background-color: rgba(255, 215, 0, 0.9);
+        }
+
+    div.main-aside.contact {
+        margin: 5% 0 0.2%;
+    }
+
+        div.main-aside.contact div.contactme {
+            margin: 20% 0 0 13%;
+        }
+
+        div.main-aside.contact span {
+            margin-left: 1%;
+        }
+
+    /******************************************
+        GLOBAL STYLE TO PARTIALS 
+    *******************************************/
+
+    div.style {
+        width: 95%;
+        height: 250px;
+        overflow: auto;
+        padding: 2% 1%;
+        background-color: rgba(255, 250, 250, 0.8);
+        border-radius: 5px;
+        font-family: 'Oswald', sans-serif;
+        color: #005A5A;
+    }
+
+        div.style p, h4 {
+            margin: 1% 0 0 2%;
+        }
+
+        div.style ul {
+            margin-top: 1%;
+            padding-left: 4.5%;
+        }
+
+        div.style img {
+            width: 15%;
+            margin: 0px 2%;
+            vertical-align: top;
+        } 
+
+            div.style img.dojo, img.cdignite, img.mongo, img.express, img.node {
+                position: relative;
+            }
+
+            div.style img.dojo {
+                top: 50px;
+            }
+
+            div.style img.cdignite {
+                width: 12%;
+                height: 20%
+            }
+
+            div.style img.mongo {
+                top: 30px;
+            }
+
+            div.style img.express {
+                top: 42px;
+            }
+
+            div.style img.node {
+                top: 34px;
+            }
+
+            div.style img.ruby {
+                width: 12%
+            }
+
+            div.style img.rail {
+                width: 10%;
+            }
+
+            div.style div.megroup {
+                margin: 2% 0;
+            }
+            
+            div.style div.sksec {
+                margin-top: 8%;
+            }
+
+            div.style div.skgroup {
+                margin: 0 5%;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            div.style img.pjct {
+                width: 98%;
+                margin: 2% 0;
+            }
+
+    div.mysummary p {
+        font-size: 1.2em;
+        margin: 3% 0;
+    }
+
+} 
+
+/******************************************
+    MEDIA QUERY FOR 695px up to 952px
+*******************************************/
+
+@media screen and (min-width: 680px) {
+    
+    /******************************************
+        INDEX TEMPLATE
+    *******************************************/
+
+    header.header-bar {
+        height: 56px;
+    }
+    
+    header.header-bar h1 {
+        font-size: 2em;
+    }
+
+    footer.footer-bar button {
+        font-size: .8em;
+    }
+
+    /******************************************
+        MAIN PARTIAL from each Template
+    *******************************************/
+
+    div.main-aside button {
+        font-size: 0.8em;
+    }
+
+    /******************************************
+        GLOBAL STYLE TO PARTIALS 
+    *******************************************/
+
+    div.style {
+        height: 330px;
+    }
+
+} 
+
+/******************************************
+    MEDIA QUERY FOR 952px up to 1209px
+*******************************************/
+
+@media screen and (min-width: 952px) {
+    
+    /******************************************
+        INDEX TEMPLATE
+    *******************************************/
+
+    header.header-bar {
+        height: 85px;
+    }
+    
+    header.header-bar h1 {
+        font-size: 3em;
+    }
+
+    header.header-bar div.links {
+        margin: 0 0 0 5%;
+    }
+
+    footer.footer-bar button {
+        font-size: 1em;
+    }
+
+    /******************************************
+        MAIN PARTIAL from each Template
+    *******************************************/
+
+    div.main-aside button {
+        font-size: 1em;
+    }
+
+    /******************************************
+        GLOBAL STYLE TO PARTIALS 
+    *******************************************/
+
+    div.style {
+        height: 400px;
+    }
+
+        /*div.style p {
+            font-size: 2em;
+        }*/
+
+/******************************************
+    MEDIA QUERY FOR 1210px up to 1450px
+*******************************************/
+
+@media screen and (min-width: 1210px) {
+    
+    /******************************************
+        INDEX TEMPLATE
+    *******************************************/
+
+    header.header-bar {
+        height: 113px;
+    }
+    
+    header.header-bar h1 {
+        font-size: 4em;
+    }
+
+    header.header-bar div.links {
+        margin: 0 0 0 5%;
+    }
+
+    /******************************************
+        MAIN PARTIAL from each Template
+    *******************************************/
+
+    div.main-aside button {
+        font-size: 1.5em;
+    }
+
+    /******************************************
+        GLOBAL STYLE TO PARTIALS 
+    *******************************************/
+
+    div.style {
+        height: 400px;
+    }
+        /*div.style p {
+            font-size: 3em;
+        }*/
+} 
+
+/******************************************
+    MEDIA QUERY FOR 1601px and up
+*******************************************/
+@media screen and (min-width: 1450px) {
+
+    /******************************************
+        INDEX TEMPLATE
+    *******************************************/
+
+    header.header-bar {
+        height: 140px;
+    }
+    
+    header.header-bar h1 {
+        font-size: 5em;
+    }
+
+    header.header-bar div.links {
+        width: 131px;
+        margin: 0 0 0 5%;
+    }
+
+    header.header-bar div.links a {
+        margin: 0 5%;
+    }
+
+    footer.footer-bar {
+        top: 4%;
+    }
+
+     footer.footer-bar button {
+        font-size: 1.5em;
+    }
+
+    /******************************************
+        MAIN PARTIAL from each Template
+    *******************************************/
+
+    div.main-aside {
+        left: 36%;
+    }
+
+    /******************************************
+        GLOBAL STYLE TO PARTIALS 
+    *******************************************/
+
+    div.style {
+        height: 470px;
+    }
+} 

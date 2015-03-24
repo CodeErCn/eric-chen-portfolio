@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script> 
+  </head>
+  <body ng-app="portfolio">
+    <section class="background" ng-controller="mainCtrl as main">
+      <header class="header-bar">
+        <h1><a href="#/">Hi! My name is Eric Chen.</a></h1>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/erchen15"><img class="icon" src="/images/LinkedIn.png" alt="linkedin"/></a>
+          <a href="https://github.com/CodeErCn"><img class="icon" src="/images/github2.png" alt="github"/></a>
+        </div>
+      </header>
+      
+      <div ng-view></div>
+    
+      <footer class="footer-bar">
+        <nav>
+        <a href="#/me"><button ng-class="{active:main.isSelected(1)}" ng-click="main.selectTab(1)">Me</button></a>
+        <a href="#/skills"><button ng-class="{active:main.isSelected(2)}" ng-click="main.selectTab(2)">Skills</button></a>
+        <a href="#/projects"><button ng-class="{active:main.isSelected(3)}" ng-click="main.selectTab(3)">Projects</button></a>
+        <a href="#/contactme"><button ng-class="{active:main.isSelected(4)}" ng-click="main.selectTab(4)">Contact Me!</button></a>
+        </nav>
+        <p>Design and build by <em>ERIC CHEN</em> . 2015</p>
+      </footer>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+    <script type="text/javascript" src="/javascripts/ngControllers/appController.js"></script>
+    <script type="text/javascript" src="/javascripts/ngDirectives/meDirective.js"></script>
+    <script type="text/javascript" src="/javascripts/ngDirectives/skillsDirective.js"></script>
+    <script type="text/javascript" src="/javascripts/ngDirectives/projectsDirective.js"></script>
+  </body>
+</html>
